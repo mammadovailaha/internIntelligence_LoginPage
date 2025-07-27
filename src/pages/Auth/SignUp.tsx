@@ -28,7 +28,7 @@ const SignUp: FC = () => {
           console.log("Form dəyərləri:", values);
         }}
       >
-        <form className="w-[90%] md:w-[50%] lg:w-[45%] h-full flex flex-col justify-center items-center gap-16">
+        <form className="w-[90%] md:w-[50%] lg:w-[45%] h-full flex flex-col justify-center items-center gap-6 md:gap-10 lg:gap-16">
           <h1 className="text-xl md:text-3xl font-bold">Join Us</h1>
           <div className="w-full flex flex-col justify-center items-center gap-3">
             <InputField name="fullName" label="Full Name" type="text" />
@@ -51,7 +51,7 @@ const SignUp: FC = () => {
          
         </form>
       </Formik>
-      <div className="w-[90%] h-[300px] md:h-[450px] lg:h-[650px] md:w-[50%]  lg:w-[50%]  flex justify-center items-center ">
+      <div className="w-[90%] h-[300px] md:h-[450px] lg:h-[700px] md:w-[50%]  lg:w-[50%]  flex justify-center items-center ">
         <ImageComponent description="Join a growing network of learners, doers, and achievers." title="Take the first step towards your future." image={SignUpBg} />
       </div>
     </div>

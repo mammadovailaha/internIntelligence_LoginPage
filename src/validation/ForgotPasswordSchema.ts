@@ -2,6 +2,6 @@
 import * as yup from "yup";
 import { emailField } from "../validation/ValidationSchema";
 
-export const resetPasswordSchema = yup.object({
+export const ForgotPasswordSchema = yup.object({
   email: emailField,
 });
