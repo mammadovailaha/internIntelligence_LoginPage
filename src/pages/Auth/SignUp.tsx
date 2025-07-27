@@ -6,6 +6,7 @@ import SignUpBg from "../../assets/images/signup.jpg";
 import MainButton from "../../components/MainButton";
 import { ImCheckboxChecked, ImCheckboxUnchecked } from "react-icons/im";
 import { Link } from "react-router-dom";
+import ImageComponent from "../../components/ImageComponent";
 
 const initialValues = {
   fullName: "",
@@ -50,10 +51,8 @@ const SignUp: FC = () => {
          
         </form>
       </Formik>
-      <div className="w-[90%] h-[300px] lg:h-[650px] md:w-[50%]  lg:w-[50%]  flex justify-center items-center ">
-        <div className="w-[90%] h-[90%] flex justify-center items-center rounded-4xl">
-          <img className="w-full h-full object-cover rounded-4xl" src={SignUpBg} alt="team photo" />
-        </div>
+      <div className="w-[90%] h-[300px] md:h-[450px] lg:h-[650px] md:w-[50%]  lg:w-[50%]  flex justify-center items-center ">
+        <ImageComponent image={SignUpBg} />
       </div>
     </div>
   );
