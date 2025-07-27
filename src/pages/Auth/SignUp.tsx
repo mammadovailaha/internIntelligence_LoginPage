@@ -33,7 +33,7 @@ const SignUp: FC = () => {
           <div className="w-full flex flex-col justify-center items-center gap-3">
             <InputField name="fullName" label="Full Name" type="text" />
             <InputField name="email" label="Email" type="email" />
-            <InputField name="password" label="Password" type="text" />
+            <InputField name="password" label="Password" type="password" />
                <div className="w-[90%] flex justify-between items-center" onClick={handleCheckboxChange}>
            <div className="flex justify-start items-center gap-2"> {checked ? <ImCheckboxChecked className="text-[#c21500]" /> : <ImCheckboxUnchecked className="text-[#c21500]" />}
             <p className="text-xs lg:text-sm">Remember me</p></div>
@@ -45,14 +45,14 @@ const SignUp: FC = () => {
             <MainButton />
           </div>
           <div className="w-[90%] flex justify-start items-center">
-            <p className="text-xs md:text-sm">Already have an account? <Link to={"/auth/login"} className="text-blue-400 text-xs lg:text-sm">Login</Link></p>
+            <p className="text-xs md:text-sm text-gray-500">Already have an account? <Link to={"/auth/login"} className="text-blue-400 text-xs lg:text-sm">Login</Link></p>
           </div>
        </div>
          
         </form>
       </Formik>
       <div className="w-[90%] h-[300px] md:h-[450px] lg:h-[650px] md:w-[50%]  lg:w-[50%]  flex justify-center items-center ">
-        <ImageComponent image={SignUpBg} />
+        <ImageComponent description="Join a growing network of learners, doers, and achievers." title="Take the first step towards your future." image={SignUpBg} />
       </div>
     </div>
   );
