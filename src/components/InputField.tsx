@@ -18,7 +18,7 @@ const InputField: FC<InputFieldProps> = ({ label, type, name }) => {
             type={type}
             placeholder={label}
             required
-            className="w-full h-[95%] outline-none  placeholder:text-xs md:placeholder:text-sm placeholder:text-gray-500 placeholder:pl-3 outline-none border-none rounded-4xl bg-transparent"
+            className="w-full h-[85%] outline-none  placeholder:text-xs md:placeholder:text-sm placeholder:text-gray-500 placeholder:pl-3 outline-none border-none rounded-4xl bg-transparent"
           />
         </div>
       </div>
